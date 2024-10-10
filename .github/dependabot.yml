@@ -41,13 +41,6 @@ updates:
           - 'version-update:semver-minor'
 
   - package-ecosystem: 'docker'
-    # Look for a `Dockerfile` in the `compose/local/node` directory
-    directory: 'compose/local/node/'
-    # Every weekday
-    schedule:
-      interval: 'daily'
-
-  - package-ecosystem: 'docker'
     # Look for a `Dockerfile` in the `compose/production/aws` directory
     directory: 'compose/production/aws/'
     # Every weekday
