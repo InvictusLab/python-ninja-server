@@ -59,5 +59,5 @@ if settings.DEBUG:
 
         urlpatterns = [path("__debug__/", include(debug_toolbar.urls))] + urlpatterns
 
-admin.site.site_title = "invictus"
+admin.site.site_title = "Invictus Admin"
 admin.site.site_header = "Invictus Admin"
