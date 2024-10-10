@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-11 00:06+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+#: invictus/templates/allauth/layouts/entrance.html:13
+#: invictus/templates/base.html:85
+msgid "Sign In"
+msgstr "登录"
+
+#: invictus/templates/base.html:70
+msgid "My Profile"
+msgstr "我的资料"
+
+#: invictus/templates/base.html:74
+msgid "Sign Out"
+msgstr "退出登录"
+
+#: invictus/templates/base.html:80
+msgid "Sign Up"
+msgstr "注册"
+
+#: invictus/users/admin.py:24
+msgid "Personal info"
+msgstr "个人信息"
+
+#: invictus/users/admin.py:26
+msgid "Permissions"
+msgstr "权限"
+
+#: invictus/users/admin.py:37
+msgid "Important dates"
+msgstr "重要日期"
+
+#: invictus/users/apps.py:9
+msgid "Users"
+msgstr "用户中心"
+
+#: invictus/users/forms.py:23 invictus/users/tests/test_forms.py:35
+msgid "This username has already been taken."
+msgstr "此用户名已被使用。"
+
+#: invictus/users/models.py:15
+msgid "Name of User"
+msgstr "昵称"
+
+#: invictus/users/tests/test_views.py:72 invictus/users/views.py:25
+msgid "Information successfully updated"
+msgstr "信息更新成功"
