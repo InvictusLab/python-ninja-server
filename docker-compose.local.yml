@@ -44,10 +44,10 @@ services:
   redis:
     image: docker.io/redis:6
     container_name: invictus_local_redis
-    
+
     volumes:
       - invictus_local_redis_data:/data
-    
+
 
   celeryworker:
     <<: *django

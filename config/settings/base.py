@@ -45,7 +45,12 @@ LOCALE_PATHS = [str(BASE_DIR / "locale")]
 # DATABASES
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
-DATABASES = {"default": env.db("DATABASE_URL", default='postgres://developer:123456@localhost:55432/invictus')}
+DATABASES = {
+    "default": env.db(
+        "DATABASE_URL",
+        default="postgres://developer:123456@localhost:55432/invictus",
+    ),
+}
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
 # https://docs.djangoproject.com/en/stable/ref/settings/#std:setting-DEFAULT_AUTO_FIELD
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
@@ -143,7 +148,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "allauth.account.middleware.AccountMiddleware",
     # simplepro middleware
-    "simplepro.middlewares.SimpleMiddleware"
+    "simplepro.middlewares.SimpleMiddleware",
 ]
 
 # STATIC
@@ -316,6 +321,9 @@ SOCIALACCOUNT_FORMS = {"signup": "invictus.users.forms.UserSocialSignupForm"}
 
 # Your stuff...
 # ------------------------------------------------------------------------------
-SIMPLEPRO_SECRET_KEY = env.str("SIMPLEPRO_SECRET_KEY", default="7239d20e77ca4315abebd0414110fb69")
+SIMPLEPRO_SECRET_KEY = env.str(
+    "SIMPLEPRO_SECRET_KEY",
+    default="7239d20e77ca4315abebd0414110fb69",
+)
 SIMPLEPRO_MONIT_DISPLAY = False
 SIMPLEPRO_INFO = False

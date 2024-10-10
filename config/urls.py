@@ -21,8 +21,10 @@ urlpatterns = [
     path("users/", include("invictus.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
-    path('sp/', include('simplepro.urls')),
-    path('favicon.ico', RedirectView.as_view(url=r'/static/images/favicons/favicon.ico')),
+    path("sp/", include("simplepro.urls")),
+    path(
+        "favicon.ico", RedirectView.as_view(url=r"/static/images/favicons/favicon.ico")
+    ),
     # Media files
     *static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),
 ]
