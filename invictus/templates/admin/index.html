@@ -1,0 +1,20 @@
+{% extends "admin/index.html" %}
+
+{% load static %}
+
+{% block head %}
+  <link href="{% static 'css/project.css' %}" rel="stylesheet" />
+{% endblock head %}
+
+{% block logo %}
+  <div class="logo-wrap" v-if="!fold">
+    <div class="float-wrap">
+      <div class="left">
+        <img src="{% static 'images/index_logo.png' %}" alt="index logo" />
+      </div>
+      <div class="left">
+        <span class="index-logo">Invictus Admin</span>
+      </div>
+    </div>
+  </div>
+{% endblock logo %}

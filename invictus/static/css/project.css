@@ -11,3 +11,21 @@
   background-color: #f2dede;
   border-color: #eed3d7;
 }
+
+.login-banner {
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.login-logo {
+  width: 80%;
+  height: auto;
+}
+
+.index-logo {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 70px;
+}

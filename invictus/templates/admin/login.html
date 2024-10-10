@@ -1,0 +1,15 @@
+{% extends "admin/login.html" %}
+
+{% load static %}
+
+{% block head %}
+  <link href="{% static 'css/project.css' %}" rel="stylesheet" />
+{% endblock head %}
+
+{% block logo %}
+  <div class="login-banner">
+    <img src="{% static 'images/login_logo.png' %}"
+         alt="login logo"
+         class="login-logo"/>
+  </div>
+{% endblock logo %}

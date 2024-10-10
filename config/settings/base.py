@@ -60,6 +60,9 @@ WSGI_APPLICATION = "config.wsgi.application"
 # APPS
 # ------------------------------------------------------------------------------
 DJANGO_APPS = [
+    "simplepro",
+    "simpleui",
+    "import_export",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
@@ -139,6 +142,8 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "allauth.account.middleware.AccountMiddleware",
+    # simplepro middleware
+    "simplepro.middlewares.SimpleMiddleware"
 ]
 
 # STATIC
@@ -311,3 +316,6 @@ SOCIALACCOUNT_FORMS = {"signup": "invictus.users.forms.UserSocialSignupForm"}
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+SIMPLEPRO_SECRET_KEY = env.str("SIMPLEPRO_SECRET_KEY", default="7239d20e77ca4315abebd0414110fb69")
+SIMPLEPRO_MONIT_DISPLAY = False
+SIMPLEPRO_INFO = False
